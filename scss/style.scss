@@ -3,6 +3,8 @@
 //IMPORT (Importar los framentos de otros archivos SASS)
 @import "colores";
 
+
+
 /* MEDIA QUERIES */
 * {
     margin: 0;
@@ -37,7 +39,7 @@
 
     footer {
         grid-area: pie;
-        background-color: gray;
+        background-color: $gris;
         padding: 20px 25px 20px 25px;
     }
 
@@ -91,23 +93,22 @@
         background-size: cover;
         background-position: bottom;
         background-repeat: no-repeat;
+        h2 {
+            color: white;
+            padding: 25px 50px;
+            font-weight: bold; 
+            font-size: 3rem;
+        }
+        p {
+            text-align: justify;
+            font-weight: normal;
+            font-size: 1,1rem;
+            color: white;
+            margin: 25px 50px 50px auto;
+            width: 30%;
+        }
     }
 
-    .destacado h2 {
-        color: white;
-        padding: 25px 50px;
-        font-weight: bold; 
-        font-size: 3rem;
-    }
-
-    .destacado p {
-        text-align: justify;
-        font-weight: normal;
-        font-size: 1,1rem;
-        color: white;
-        margin: 25px 50px 50px auto;
-        width: 30%;
-    }
 
     .imgLogo {
         width: 100%;
@@ -136,25 +137,24 @@
         align-items: center;
         align-content: center;
         padding: 25px 10% 25px 10%;
+        p {
+            padding: 10px 50px 10px 50px;
+            width: 50%;
+            text-align: justify;
+        }
+        img {
+            width: 60vh;
+        }
     }
     
-    .textoImgNosotros p {
-        padding: 10px 50px 10px 50px;
-        width: 50%;
-        text-align: justify;
-    }
-
-    .textoImgNosotros img {
-        width: 60vh;
-    }
-
     .listaNosotros {
         padding: 25px 0 25px 0;
         padding-bottom: 20px;
+        div li {
+            border: none;
+        }
     }
-    .listaNosotros div li {
-        border: none;
-    }
+
     .texto2Nosotros {
         padding: 25px 20% 25px 20%;
     }
@@ -196,14 +196,15 @@
     .destacado {
         background-size: cover;
         background-repeat: no-repeat;
-    }
-    .destacado h2 {
-        font-size: 2.5rem;
-    }
-
-    .destacado p {
-        font-size: 1rem;
-        width: 60%;
+        h2 {
+            font-size: 2.5rem;
+        }
+    
+        p {
+            font-size: 1rem;
+            width: 60%;
+        }
+    
     }
 
     .imgLogo {
@@ -213,14 +214,15 @@
     .textoImgNosotros {
         padding: 15px 5% 15px 5%;
         flex-direction: column-reverse;
+        img {
+            padding: 10px 0 10px 0;
+        }
+        p {
+            padding: 10px 25px 10px 25px;
+            width: 80%;
+        }
     }
-    .textoImgNosotros img {
-        padding: 10px 0 10px 0;
-    }
-    .textoImgNosotros p {
-        padding: 10px 25px 10px 25px;
-        width: 80%;
-    }
+
     .texto2Nosotros {
         padding: 15px 10% 15px 10%;
         text-align: justify;
@@ -253,14 +255,17 @@
         grid-template-columns: 100%;
         grid-template-rows: auto auto auto;
     }
-    .destacado h2 {
-        font-size: 2rem;
+    .destacado {
+        h2 {
+            font-size: 2rem;
+        }
+        p {
+            font-size: 0.9rem;
+            color: white;
+            width: 80%;
+        }
     }
-    .destacado p {
-        font-size: 0.9rem;
-        color: white;
-        width: 80%;
-    }
+
     .imgLogo {
         width: 70%;
     }
